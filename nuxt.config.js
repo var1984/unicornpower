@@ -19,6 +19,16 @@ export default {
   generate: {
     fallback: true
   },
+
+  builds: [
+    {
+      "src": "nuxt.config.js",
+      "use": "@nuxtjs/vercel-builder",
+      "config": {
+        "generateStaticRoutes": true
+      }
+    }
+  ],
   
   loading: {color: 'blue'},
 

@@ -13,7 +13,9 @@ export default {
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
-
+  ssr: true,
+  target: 'server',
+  
   loading: {color: 'blue'},
 
   // Global CSS: https://go.nuxtjs.dev/config-css
